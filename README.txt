@@ -8,6 +8,6 @@
 
 # Execução:
 ### coloque a imagem que deseja analisar no diretório /imagens
-### e altere o imagem_path no arquivo main.py, ou passe o url de uma imagem no imagem path.
-## e execute o arquivo main.py para realizar a analise
+### e altere o imagem_path no arquivo main.py para o caminho da imagem, ou a url de uma imagem..
+## execute o arquivo main.py para realizar a analise
 ### o resultado será salvo no diretório /results
