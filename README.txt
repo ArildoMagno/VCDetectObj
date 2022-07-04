@@ -6,7 +6,7 @@
 ### Necessário Python3.10
 ### execute os comandos abaixo em ordem para instalar as bibliotecas necessárias via pip.
 ## 1- entre no diretorio models/research e execute o comando: "pip install ."
-## 2- na raiz do projeto execute o comando: "pip3 install -r requirements.txt --no-deps"
+## 2- na raiz do projeto execute o comando: "pip install -r requirements.txt --no-deps"
 
 
 # Execução:
