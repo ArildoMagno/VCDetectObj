@@ -9,5 +9,5 @@
 # Execução:
 ### coloque a imagem que deseja analisar no diretório /imagens.
 ### altere o imagem_path no arquivo main.py para o caminho da imagem.
-## execute o arquivo main.py para realizar a analise.
+## execute o arquivo main.py para realizar a análise.
 ### o resultado será salvo no diretório /results.
