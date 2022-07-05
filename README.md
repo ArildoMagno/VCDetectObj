@@ -8,10 +8,6 @@ Execute os comandos abaixo em ordem para instalar as bibliotecas necessárias vi
 
 Entre no diretorio models/research e execute o comando:
 
-```sh
-$ pip install .
-```
-
 Na raiz do projeto execute o comando:
 
 ```sh
