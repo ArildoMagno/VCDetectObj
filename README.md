@@ -19,13 +19,13 @@ comando:
 ```
 
 
-# Execução:
+### Execução:
 * Coloque a imagem que deseja analisar no diretório /imagens.
 * Altere o imagem_path no arquivo main.py para o caminho da imagem.
 * Execute o arquivo main.py para realizar a análise.
 * O resultado será salvo no diretório /results.
 
-## Localmente via Docker:
+# Localmente via Docker:
 Se preferir, pode utilizar o docker rodando os seguintes comandos:
 ```sh
 $ docker build --rm -f Dockerfile -t ubuntu:visaocomp .
