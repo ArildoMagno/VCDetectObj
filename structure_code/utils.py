@@ -9,24 +9,11 @@ from pathlib import Path
 
 from structure_code import config
 
-# SELECT THE OPTIONS TO FLIP OR CONVERT TO GRAYSCALE
 flip_image_horizontally_key = False
 convert_image_to_grayscale_key = False
 
 
 def load_image_into_numpy_array(path):
-    """Load an image from file into a numpy array.
-
-    Puts image into numpy array to feed into tensorflow graph.
-    Note that by convention we put it into a numpy array with shape
-    (height, width, channels), where channels=3 for RGB.
-
-    Args:
-      path: the file path to the image
-
-    Returns:
-      uint8 numpy array with shape (img_height, img_width, 3)
-    """
     image = None
     if (path.startswith('http')):
         response = urlopen(path)
@@ -61,11 +48,8 @@ def convert_gray_scale(image_np):
 
 
 def inference(image_np):
-    # running inference
     results = config.hub_model(image_np)
 
-    # different object detection models have additional results
-    # all of them are explained in the documentation
     result = {key: value.numpy() for key, value in results.items()}
     return result
 
@@ -75,7 +59,6 @@ def visualizing_result(image_np, result):
     label_id_offset = 0
     image_np_with_detections = image_np.copy()
 
-    # Use keypoints if available in detections
     keypoints, keypoint_scores = None, None
     if 'detection_keypoints' in result:
         keypoints = result['detection_keypoints'][0]
